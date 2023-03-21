@@ -1,0 +1,35 @@
+1 hr setup
+
+- download files
+- setup git repo and attach to github.
+- setup 6 colors, 1 font & 9 image assets in figma
+
+
+1 hr figma layout
+
+finished roughly half the static mobile design
+placed about 8 elements
+
+
+1 hr figma layout
+
+finished mobile layout
+another 21 elements. so far a rate of roughly 4 minutes per
+element including measurement.
+
+
+.7 hr figma layout
+
+started and finished desktop layout
+lined up elements over reference image instead of measuring,
+it was much faster. 27 elements in around 45 minutes, so
+around 1.7 minutes per element this way.
+
+1 hr figma layout and automation
+
+placed about 8 elements to create mobile menu, then
+13 elements. done with figma.
+
+
+Mon 21 March 2023 14:37
+
