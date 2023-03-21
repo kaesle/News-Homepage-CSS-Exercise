@@ -1,13 +1,13 @@
 import './App.css';
 import { useState } from 'react';
 
-import MobileMenu from './MobileMenu';
+import MobileMenu from './components/MobileMenu';
 
 import logo from './assets/images/logo.svg';
 import menuOpenIcon from './assets/images/icon-menu.svg';
 import mobileHero from './assets/images/image-web-3-mobile.jpg';
 
-function App() {
+export default function App() {
   const [menuOpen, setMenuOpen] = useState<boolean>(false);
 
   return (
@@ -21,6 +21,13 @@ function App() {
       </header>
       <main>
         <img id="mobileHero" src={mobileHero} aria-hidden alt="colorful three-dimensional shapes" />
+        <h1>
+          The Bright Future of Web 3.0?
+        </h1>
+        <p id="headBlurb">
+        We dive into the next evolution of the web that claims to put the power of the platforms
+        back in the hands of the people. But is it really fulfilling its promise?
+        </p>
       </main>
       <footer>
         footer
@@ -28,5 +35,3 @@ function App() {
     </div>
   );
 }
-
-export default App;

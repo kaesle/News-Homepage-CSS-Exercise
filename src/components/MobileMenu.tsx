@@ -1,6 +1,8 @@
 import type { Dispatch } from 'react';
 
-import menuCloseIcon from './assets/images/icon-menu-close.svg';
+import menuCloseIcon from '../assets/images/icon-menu-close.svg';
+
+import './MobileMenu.css';
 
 export default function MobileMenu({ menuOpen, setMenuOpen }: { menuOpen: boolean, setMenuOpen: Dispatch<React.SetStateAction<boolean>> }): JSX.Element {
   return (
