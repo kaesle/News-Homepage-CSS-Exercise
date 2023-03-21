@@ -9,6 +9,8 @@
 
 body {
   background-color: var(--off-white);
+  font-family: Inter, sans-serif;
+  color: var(--very-dark-blue);
 }
 
 header {
@@ -65,4 +67,19 @@ div#menu-div {
 
 div#menu-div[data-menu-open="false"] {
   display: none;
+}
+
+div#menu-items {
+  margin: 149px 0 0 26px;
+}
+
+a.menu {
+  display: block;
+  margin: 0 0 35px 0;
+  color: var(--dark-grayish-blue);
+  text-decoration: none;
+}
+
+a.menu:hover {
+  color: var(--soft-orange);
 }

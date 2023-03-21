@@ -1,7 +1,7 @@
 import './App.css';
 import { useState } from 'react';
 
-import Menu from './Menu';
+import MobileMenu from './MobileMenu';
 
 import logo from './assets/images/logo.svg';
 import menuOpenIcon from './assets/images/icon-menu.svg';
@@ -11,7 +11,7 @@ function App() {
 
   return (
     <div className="App">
-      <Menu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
+      <MobileMenu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
       <header className="App-header">
         <img id="logo" src={logo} alt="W logo" />
         <button id="menu-open" onClick={() => setMenuOpen(true)}>
