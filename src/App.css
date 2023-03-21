@@ -1,3 +1,8 @@
+@font-face {
+  font-family: Inter;
+  src: url(assets/fonts/Inter-VariableFont_slnt\,wght.ttf);
+}
+
 :root {
   --soft-orange: #E9AB53;
   --soft-red: #F15E50;
