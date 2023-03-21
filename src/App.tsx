@@ -2,6 +2,7 @@ import './App.css';
 import { useState } from 'react';
 
 import MobileMenu from './components/MobileMenu';
+import NewSection from './components/NewSection';
 
 import logo from './assets/images/logo.svg';
 import menuOpenIcon from './assets/images/icon-menu.svg';
@@ -25,15 +26,14 @@ export default function App() {
           The Bright Future of Web 3.0?
         </h1>
         <p id="headBlurb">
-        We dive into the next evolution of the web that claims to put the power of the platforms
-        back in the hands of the people. But is it really fulfilling its promise?
+          We dive into the next evolution of the web that claims to put the power of the platforms
+          back in the hands of the people. But is it really fulfilling its promise?
         </p>
         <button className='readMore'>
           <pre>R E A D  M O R E</pre>
         </button>
+        <NewSection />
       </main>
-      <footer>
-      </footer>
     </div>
   );
 }

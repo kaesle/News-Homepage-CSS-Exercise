@@ -1,0 +1,29 @@
+div.new {
+  margin: 64px 16px;
+  padding: 36px 26px 26px;
+  background-color: var(--very-dark-blue);
+  color: var(--off-white);
+}
+
+.new .section {
+  padding-bottom: 5px;
+}
+
+.withline {
+  border-bottom: solid 1px var(--off-white);
+}
+
+h2.new {
+  margin-bottom: 27px;
+  font-size: 38px;
+  color: var(--soft-orange);
+}
+
+h3.new {
+  margin-top: 50px;
+  margin-bottom: 5px;
+}
+
+.new p {
+  line-height: 25px;
+}

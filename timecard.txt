@@ -35,3 +35,8 @@ placed about 8 elements to create mobile menu, then
 
 built mobile page down through "read more" button. 13 elements total
 at almost ten minutes per element.
+
+
+0.5 hr html/css
+
+built out New section and split it into a separate React component
