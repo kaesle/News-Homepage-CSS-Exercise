@@ -31,5 +31,7 @@ placed about 8 elements to create mobile menu, then
 13 elements. done with figma.
 
 
-Mon 21 March 2023 14:37
+2 hrs html/css
 
+built mobile page down through "read more" button. 13 elements total
+at almost ten minutes per element.
