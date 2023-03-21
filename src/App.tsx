@@ -28,6 +28,9 @@ export default function App() {
         We dive into the next evolution of the web that claims to put the power of the platforms
         back in the hands of the people. But is it really fulfilling its promise?
         </p>
+        <button className='readMore'>
+          <pre>R E A D  M O R E</pre>
+        </button>
       </main>
       <footer>
         footer
