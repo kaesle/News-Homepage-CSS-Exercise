@@ -69,3 +69,9 @@ button.readMore {
 button.readMore:hover {
   background-color: var(--very-dark-blue);
 }
+
+@media (min-width: 1000px) and (orientation: landscape) {
+  h1::after {
+    content: 'Desktop Mode'
+  }
+}

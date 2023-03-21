@@ -33,7 +33,6 @@ export default function App() {
         </button>
       </main>
       <footer>
-        footer
       </footer>
     </div>
   );
