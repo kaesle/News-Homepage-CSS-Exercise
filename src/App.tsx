@@ -5,6 +5,7 @@ import MobileMenu from './MobileMenu';
 
 import logo from './assets/images/logo.svg';
 import menuOpenIcon from './assets/images/icon-menu.svg';
+import mobileHero from './assets/images/image-web-3-mobile.jpg';
 
 function App() {
   const [menuOpen, setMenuOpen] = useState<boolean>(false);
@@ -19,7 +20,7 @@ function App() {
         </button>
       </header>
       <main>
-        main
+        <img id="mobileHero" src={mobileHero} aria-hidden alt="colorful three-dimensional shapes" />
       </main>
       <footer>
         footer

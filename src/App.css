@@ -83,3 +83,9 @@ a.menu {
 a.menu:hover {
   color: var(--soft-orange);
 }
+
+img#mobileHero {
+  width: 343px;
+  height: 311px;
+  margin-left: 16px;
+}
