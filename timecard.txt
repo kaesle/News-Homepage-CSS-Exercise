@@ -40,3 +40,8 @@ at almost ten minutes per element.
 0.5 hr html/css
 
 built out New section and split it into a separate React component
+
+
+1 hr html/css
+
+built last section of the mobile site, 15 elements total.
