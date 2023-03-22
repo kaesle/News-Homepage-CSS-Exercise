@@ -28,13 +28,13 @@ header {
   position: relative;
 }
 
-img#logo {
+#logo {
   margin: 27px 16px;
   width: 46;
   height: 29;
 }
 
-button#menu-open {
+#menu-open {
   position: absolute;
   right: 0;
   border: none;
@@ -44,10 +44,27 @@ button#menu-open {
   margin: 34px 16px;
 }
 
-img#mobileHero {
+#mobileHero {
   width: 343px;
   height: 311px;
   margin-left: 16px;
+}
+
+#desktopHero {
+  display: none;
+  grid-area: hero;
+}
+
+@media (min-width: 1000px) and (orientation: landscape) {
+  #mobileHero {
+    display: none;
+  }
+
+  #desktopHero {
+    display: block;
+    width: 730px;
+    height: 300px;
+  }
 }
 
 h1 {
@@ -76,7 +93,8 @@ button.readMore:hover {
 }
 
 @media (min-width: 1000px) and (orientation: landscape) {
-  h1::after {
-    content: 'Desktop Mode'
+  main {
+    display: grid;
+    grid-template-areas: "hero hero new" "headline body new" "01 02 03";
   }
 }

@@ -32,3 +32,15 @@ div.story p {
   grid-area: blurb;
   color: var(--dark-grayish-blue);
 }
+
+.tns01 {
+  grid-area: 01;
+}
+
+.tns02 {
+  grid-area: 02;
+}
+
+.tns03 {
+  grid-area: 03;
+}

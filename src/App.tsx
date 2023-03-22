@@ -8,6 +8,7 @@ import ThumbnailStory from './components/ThumbnailStory';
 import logo from './assets/images/logo.svg';
 import menuOpenIcon from './assets/images/icon-menu.svg';
 import mobileHero from './assets/images/image-web-3-mobile.jpg';
+import desktopHero from './assets/images/image-web-3-desktop.jpg';
 import thumb1 from './assets/images/image-retro-pcs.jpg';
 import thumb2 from './assets/images/image-top-laptops.jpg';
 import thumb3 from './assets/images/image-gaming-growth.jpg';
@@ -54,19 +55,22 @@ export default function App() {
       </header>
       <main>
         <img id="mobileHero" src={mobileHero} aria-hidden alt="colorful three-dimensional shapes" />
+        <img id="desktopHero" src={desktopHero} aria-hidden alt="colorful three-dimensional shapes" />
         <h1>
           The Bright Future of Web 3.0?
         </h1>
-        <p id="headBlurb">
-          We dive into the next evolution of the web that claims to put the power of the platforms
-          back in the hands of the people. But is it really fulfilling its promise?
-        </p>
-        <button className='readMore'>
-          <pre>R E A D  M O R E</pre>
-        </button>
+        <div className="headContent">
+          <p id="headBlurb">
+            We dive into the next evolution of the web that claims to put the power of the platforms
+            back in the hands of the people. But is it really fulfilling its promise?
+          </p>
+          <button className='readMore'>
+            <pre>R E A D  M O R E</pre>
+          </button>
+        </div>
         <NewSection />
         {
-          stories.map(s=>
+          stories.map(s =>
             <ThumbnailStory
               imgSrc={s.imgSrc}
               number={s.number}
