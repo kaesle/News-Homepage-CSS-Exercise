@@ -57,4 +57,6 @@ create grid structure (but no styling yet)
 fix grid. now everything is more or less where it should be
 
 
+1.5 hr html/css
 
+finish up project
