@@ -98,7 +98,7 @@ main {
 @media (min-width: 1200px) and (orientation: landscape) {
   .narrow {
     display: grid;
-    grid-template: 300px 209px 129px / 380px 380px 380px;
+    grid-template: 300px 209px 129px / 350px 350px 350px;
     grid-template-areas: "hero hero new" "headline blurb new" "tns01 tns02 tns03";
     gap: 30px;
   }
@@ -126,6 +126,10 @@ main {
 
   p#headBlurb {
     color: var(--dark-grayish-blue);
+  }
+
+  button.readMore {
+    margin: 34px 0 0 0;
   }
 
   #mobileHero {
