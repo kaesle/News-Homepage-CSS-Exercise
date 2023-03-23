@@ -29,7 +29,7 @@ header {
 }
 
 #logo {
-  margin: 27px 16px;
+  margin: 27px 0;
   width: 46;
   height: 29;
 }
@@ -41,13 +41,13 @@ header {
   background-color: var(--off-white);
   width: 40;
   height: 17;
-  margin: 34px 16px;
+  margin: 34px 0;
 }
 
 #mobileHero {
   width: 343px;
   height: 311px;
-  margin-left: 16px;
+  margin-left: 0;
 }
 
 #desktopHero {
@@ -59,7 +59,7 @@ header {
 
 h1 {
   max-width: 365px;
-  margin: 5px 50px 0 16px;
+  margin: 5px 50px 0 0;
   font-size: 40px;
   line-height: 42px;
   grid-area: "headline";
@@ -71,13 +71,13 @@ h1 {
 
 p#headBlurb {
   max-width: 337px;
-  margin: 16px 26px 0 16px;
+  margin: 16px 26px 0 0;
   line-height: 25px;
 }
 
 button.readMore {
   border: none;
-  margin: 10px 0 0 16px;
+  margin: 10px 0 0 ;
   padding: 18px 35px;
   background-color: var(--soft-red);
   font-weight: bold;
@@ -93,6 +93,10 @@ main {
   display: flex;
   flex-direction: row;
   justify-content: center;
+}
+
+.narrow {
+  margin: 0 16px;
 }
 
 @media (min-width: 1200px) and (orientation: landscape) {
