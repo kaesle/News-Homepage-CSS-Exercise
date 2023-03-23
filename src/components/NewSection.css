@@ -33,7 +33,7 @@ h3.new {
   line-height: 25px;
 }
 
-@media (min-width: 1128px) and (orientation: landscape) {
+@media (min-width: 1200px) and (orientation: landscape) {
   div.new {
     margin: 0;
   }
