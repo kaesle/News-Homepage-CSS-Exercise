@@ -1,4 +1,6 @@
 div.new {
+  box-sizing: border-box;
+  width: 343px;
   margin: 64px 16px;
   padding: 36px 26px 26px;
   background-color: var(--very-dark-blue);
@@ -28,7 +30,7 @@ h3.new {
   line-height: 25px;
 }
 
-@media (min-width: 1000px) and (orientation: landscape) {
+@media (min-width: 1128px) and (orientation: landscape) {
   div.new {
     grid-area: new;
   }

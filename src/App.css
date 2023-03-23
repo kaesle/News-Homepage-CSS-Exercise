@@ -68,12 +68,14 @@ header {
 }
 
 h1 {
+  max-width: 365px;
   margin: 5px 50px 0 16px;
   font-size: 40px;
   line-height: 42px;
 }
 
 p#headBlurb {
+  max-width: 337px;
   margin: 16px 26px 0 16px;
   line-height: 25px;
 }
@@ -92,7 +94,13 @@ button.readMore:hover {
   background-color: var(--very-dark-blue);
 }
 
-@media (min-width: 1000px) and (orientation: landscape) {
+main {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+@media (min-width: 1128px) and (orientation: landscape) {
   .narrow {
     display: grid;
     grid-template-areas: "hero hero new" "headline body new" "01 02 03";

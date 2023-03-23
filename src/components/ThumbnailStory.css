@@ -33,14 +33,20 @@ div.story p {
   color: var(--dark-grayish-blue);
 }
 
-.tns01 {
+#tns01,
+#tns02,
+#tns03 {
+  width: 350px;
+}
+
+#tns01 {
   grid-area: 01;
 }
 
-.tns02 {
+#tns02 {
   grid-area: 02;
 }
 
-.tns03 {
+#tns03 {
   grid-area: 03;
 }
