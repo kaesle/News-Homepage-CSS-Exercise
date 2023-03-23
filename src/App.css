@@ -97,10 +97,9 @@ main {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  margin-top: 60px;
 }
 
-.grid {
+.narrow {
   margin: 0 16px;
 }
 
@@ -127,6 +126,10 @@ main {
     grid-template: 300px 209px 129px / 350px 350px 350px;
     grid-template-areas: "hero hero new" "headline blurb new" "tns01 tns02 tns03";
     gap: 30px;
+  }
+
+  .narrow {
+    margin-top: 60px;
   }
 
   div.narrow > * {
