@@ -54,30 +54,32 @@ export default function App() {
         </button>
       </header>
       <main>
-        <img id="mobileHero" src={mobileHero} aria-hidden alt="colorful three-dimensional shapes" />
-        <img id="desktopHero" src={desktopHero} aria-hidden alt="colorful three-dimensional shapes" />
-        <h1>
-          The Bright Future of Web 3.0?
-        </h1>
-        <div className="headContent">
-          <p id="headBlurb">
-            We dive into the next evolution of the web that claims to put the power of the platforms
-            back in the hands of the people. But is it really fulfilling its promise?
-          </p>
-          <button className='readMore'>
-            <pre>R E A D  M O R E</pre>
-          </button>
+        <div className="narrow">
+          <img id="mobileHero" src={mobileHero} aria-hidden alt="colorful three-dimensional shapes" />
+          <img id="desktopHero" src={desktopHero} aria-hidden alt="colorful three-dimensional shapes" />
+          <h1>
+            The Bright Future of Web 3.0?
+          </h1>
+          <div className="headContent">
+            <p id="headBlurb">
+              We dive into the next evolution of the web that claims to put the power of the platforms
+              back in the hands of the people. But is it really fulfilling its promise?
+            </p>
+            <button className='readMore'>
+              <pre>R E A D  M O R E</pre>
+            </button>
+          </div>
+          <NewSection />
+          {
+            stories.map(s =>
+              <ThumbnailStory
+                imgSrc={s.imgSrc}
+                number={s.number}
+                headline={s.headline}
+                blurb={s.blurb}
+              />)
+          }
         </div>
-        <NewSection />
-        {
-          stories.map(s =>
-            <ThumbnailStory
-              imgSrc={s.imgSrc}
-              number={s.number}
-              headline={s.headline}
-              blurb={s.blurb}
-            />)
-        }
       </main>
     </div>
   );

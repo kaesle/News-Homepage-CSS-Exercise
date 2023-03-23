@@ -93,7 +93,7 @@ button.readMore:hover {
 }
 
 @media (min-width: 1000px) and (orientation: landscape) {
-  main {
+  .narrow {
     display: grid;
     grid-template-areas: "hero hero new" "headline body new" "01 02 03";
   }
