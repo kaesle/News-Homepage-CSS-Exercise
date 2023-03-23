@@ -40,13 +40,13 @@ div.story p {
 }
 
 #tns01 {
-  grid-area: 01;
+  grid-area: tns01;
 }
 
 #tns02 {
-  grid-area: 02;
+  grid-area: tns02;
 }
 
 #tns03 {
-  grid-area: 03;
+  grid-area: tns03;
 }

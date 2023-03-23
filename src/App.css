@@ -51,6 +51,8 @@ header {
 }
 
 #desktopHero {
+  width: 730px;
+  height: 300px;
   display: none;
   grid-area: hero;
 }
@@ -72,6 +74,11 @@ h1 {
   margin: 5px 50px 0 16px;
   font-size: 40px;
   line-height: 42px;
+  grid-area: "headline";
+}
+
+.headContent {
+  grid-area: "blurb";
 }
 
 p#headBlurb {
@@ -103,6 +110,22 @@ main {
 @media (min-width: 1128px) and (orientation: landscape) {
   .narrow {
     display: grid;
-    grid-template-areas: "hero hero new" "headline body new" "01 02 03";
+    grid-template: 300px 209px 198px / 380px 380px 380px;
+    grid-template-areas: "hero hero new" "headline blurb new" "tns01 tns02 tns03";
+    gap: 30px;
+  }
+
+  div.narrow > * {
+    margin: 0;
+  }
+
+  h1,
+  .headContent {
+    width: 350px;
+  }
+
+  p#headBlurb,
+  button.readMore {
+    margin: 0;
   }
 }
