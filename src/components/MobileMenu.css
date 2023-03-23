@@ -8,7 +8,7 @@ button#menu-close {
   margin: 26px 20px;
 }
 
-div#menu-mask {
+#menu-mask {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -17,11 +17,11 @@ div#menu-mask {
   z-index: 1;
 }
 
-div#menu-mask[data-menu-open="false"] {
+#menu-mask[data-menu-open="false"] {
   display: none;
 }
 
-div#menu-div {
+#menu-div {
   position: absolute;
   right: 0;
   width: 257px;
@@ -30,11 +30,11 @@ div#menu-div {
   background-color: var(--off-white);
 }
 
-div#menu-div[data-menu-open="false"] {
+#menu-div[data-menu-open="false"] {
   display: none;
 }
 
-div#menu-items {
+#menu-items {
   margin: 149px 0 0 26px;
 }
 

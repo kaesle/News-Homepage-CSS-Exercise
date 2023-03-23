@@ -44,6 +44,10 @@ header {
   margin: 34px 0;
 }
 
+#menu-items {
+  display:none;
+}
+
 #mobileHero {
   width: 343px;
   height: 311px;
@@ -93,14 +97,32 @@ main {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  margin-top: 60px;
 }
 
-.narrow {
+.grid {
   margin: 0 16px;
 }
 
 @media (min-width: 1200px) and (orientation: landscape) {
-  .narrow {
+  #menu {
+    display: none;
+  }
+  
+  div#menu-items {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 45px 0;
+  }
+
+  #menu-items > a.menu {
+    display: inline-block;
+    margin: 0 6px 0 34px;
+  }
+
+  .grid {
     display: grid;
     grid-template: 300px 209px 129px / 350px 350px 350px;
     grid-template-areas: "hero hero new" "headline blurb new" "tns01 tns02 tns03";

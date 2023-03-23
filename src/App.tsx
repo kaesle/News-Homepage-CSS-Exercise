@@ -47,38 +47,47 @@ export default function App() {
   return (
     <div className="App">
       <MobileMenu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
-      <header className="App-header">
-        <img id="logo" src={logo} alt="W logo" />
-        <button id="menu-open" onClick={() => setMenuOpen(true)}>
-          <img id="menu" src={menuOpenIcon} alt="open menu" />
-        </button>
-      </header>
       <main>
         <div className="narrow">
-          <img id="mobileHero" src={mobileHero} aria-hidden alt="colorful three-dimensional shapes" />
-          <img id="desktopHero" src={desktopHero} aria-hidden alt="colorful three-dimensional shapes" />
-          <h1>
-            The Bright Future of Web 3.0?
-          </h1>
-          <div className="headContent">
-            <p id="headBlurb">
-              We dive into the next evolution of the web that claims to put the power of the platforms
-              back in the hands of the people. But is it really fulfilling its promise?
-            </p>
-            <button className='readMore'>
-              <pre>R E A D  M O R E</pre>
+          <header className="App-header">
+            <img id="logo" src={logo} alt="W logo" />
+            <button id="menu-open" onClick={() => setMenuOpen(true)}>
+              <img id="menu" src={menuOpenIcon} alt="open menu" />
             </button>
+            <div id="menu-items">
+              <a className="menu" href='./'>Home</a>
+              <a className="menu" href='./'>New</a>
+              <a className="menu" href='./'>Popular</a>
+              <a className="menu" href='./'>Trending</a>
+              <a className="menu" href='./'>Categories</a>
+            </div>
+          </header>
+          <div className="grid">
+            <img id="mobileHero" src={mobileHero} aria-hidden alt="colorful three-dimensional shapes" />
+            <img id="desktopHero" src={desktopHero} aria-hidden alt="colorful three-dimensional shapes" />
+            <h1>
+              The Bright Future of Web 3.0?
+            </h1>
+            <div className="headContent">
+              <p id="headBlurb">
+                We dive into the next evolution of the web that claims to put the power of the platforms
+                back in the hands of the people. But is it really fulfilling its promise?
+              </p>
+              <button className='readMore'>
+                <pre>R E A D  M O R E</pre>
+              </button>
+            </div>
+            <NewSection />
+            {
+              stories.map(s =>
+                <ThumbnailStory
+                  imgSrc={s.imgSrc}
+                  number={s.number}
+                  headline={s.headline}
+                  blurb={s.blurb}
+                />)
+            }
           </div>
-          <NewSection />
-          {
-            stories.map(s =>
-              <ThumbnailStory
-                imgSrc={s.imgSrc}
-                number={s.number}
-                headline={s.headline}
-                blurb={s.blurb}
-              />)
-          }
         </div>
       </main>
     </div>
