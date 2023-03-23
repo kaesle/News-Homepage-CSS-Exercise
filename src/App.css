@@ -28,42 +28,60 @@ header {
   position: relative;
 }
 
-img#logo {
-  margin: 27px 16px;
+#logo {
+  margin: 27px 0;
   width: 46;
   height: 29;
 }
 
-button#menu-open {
+#menu-open {
   position: absolute;
   right: 0;
   border: none;
   background-color: var(--off-white);
   width: 40;
   height: 17;
-  margin: 34px 16px;
+  margin: 34px 0;
 }
 
-img#mobileHero {
+#menu-items {
+  display:none;
+}
+
+#mobileHero {
   width: 343px;
   height: 311px;
-  margin-left: 16px;
+  margin-left: 0;
+}
+
+#desktopHero {
+  width: 730px;
+  height: 300px;
+  display: none;
+  grid-area: hero;
 }
 
 h1 {
-  margin: 5px 50px 0 16px;
+  max-width: 365px;
+  margin: 5px 50px 0 0;
   font-size: 40px;
   line-height: 42px;
+  grid-area: "headline";
+}
+
+.headContent {
+  grid-area: "blurb";
 }
 
 p#headBlurb {
-  margin: 16px 26px 0 16px;
+  max-width: 337px;
+  margin: 16px 26px 0 0;
   line-height: 25px;
 }
 
 button.readMore {
   border: none;
-  margin: 10px 0 0 16px;
+  margin: 10px 0 0 ;
   padding: 18px 35px;
   background-color: var(--soft-red);
   font-weight: bold;
@@ -75,8 +93,81 @@ button.readMore:hover {
   background-color: var(--very-dark-blue);
 }
 
-@media (min-width: 1000px) and (orientation: landscape) {
-  h1::after {
-    content: 'Desktop Mode'
+main {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.narrow {
+  margin: 0 16px;
+}
+
+@media (min-width: 1200px) and (orientation: landscape) {
+  #menu {
+    display: none;
+  }
+  
+  div#menu-items {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 45px 0;
+  }
+
+  #menu-items > a.menu {
+    display: inline-block;
+    margin: 0 6px 0 34px;
+  }
+
+  .grid {
+    display: grid;
+    grid-template: 300px 209px 129px / 350px 350px 350px;
+    grid-template-areas: "hero hero new" "headline blurb new" "tns01 tns02 tns03";
+    gap: 30px;
+  }
+
+  .narrow {
+    margin-top: 60px;
+  }
+
+  div.narrow > * {
+    margin: 0;
+  }
+
+  h1,
+  .headContent {
+    width: 350px;
+  }
+
+  h1 {
+    max-width: 330px;
+    font-size: 50px;
+    font-weight: 800;
+    line-height: 55px;
+  }
+
+  p#headBlurb,
+  button.readMore {
+    margin: 0;
+  }
+
+  p#headBlurb {
+    color: var(--dark-grayish-blue);
+  }
+
+  button.readMore {
+    margin: 34px 0 0 0;
+  }
+
+  #mobileHero {
+    display: none;
+  }
+
+  #desktopHero {
+    display: block;
+    width: 730px;
+    height: 300px;
   }
 }

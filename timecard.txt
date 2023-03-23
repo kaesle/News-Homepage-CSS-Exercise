@@ -45,3 +45,18 @@ built out New section and split it into a separate React component
 1 hr html/css
 
 built last section of the mobile site, 15 elements total.
+
+
+0.3 hr html/css
+
+create grid structure (but no styling yet)
+
+
+1.5 hr html/css
+
+fix grid. now everything is more or less where it should be
+
+
+1.5 hr html/css
+
+finish up project

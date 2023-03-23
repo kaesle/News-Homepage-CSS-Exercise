@@ -1,4 +1,4 @@
-div.story {
+.story {
   display: grid;
   grid-template-areas: "image number" "image headline" "image blurb";
   grid-column-gap: 33px;
@@ -7,13 +7,13 @@ div.story {
   line-height: 26px;
 }
 
-div.story img {
+.story img {
   grid-area: image;
   width: 102px;
   height: 129px;
 }
 
-div.story h2 {
+.story h2 {
   margin: 10px 0;
   grid-area: number;
   color: var(--grayish-blue);
@@ -21,14 +21,41 @@ div.story h2 {
   font-weight: 800;
 }
 
-div.story h3 {
+.story h3 {
   grid-area: headline;
   margin-bottom: 2px;
   font-size: 17px;
   color: var(--very-dark-blue);
 }
 
-div.story p {
+.story p {
   grid-area: blurb;
   color: var(--dark-grayish-blue);
+}
+
+.story {
+  width: 343px;
+  margin: 0;
+}
+
+h3.headline:hover {
+  color: var(--soft-orange);
+}
+
+#tns01 {
+  grid-area: tns01;
+}
+
+#tns02 {
+  grid-area: tns02;
+}
+
+#tns03 {
+  grid-area: tns03;
+}
+
+@media (min-width: 1200px) and (orientation: landscape) {
+  .story {
+    width: 350px;
+  }
 }

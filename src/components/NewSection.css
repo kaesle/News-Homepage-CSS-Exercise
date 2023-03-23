@@ -1,5 +1,9 @@
 div.new {
-  margin: 64px 16px;
+  grid-area: new;
+  box-sizing: border-box;
+  width: 343px;
+  height: 509px;
+  margin: 64px 0;
   padding: 36px 26px 26px;
   background-color: var(--very-dark-blue);
   color: var(--off-white);
@@ -24,6 +28,16 @@ h3.new {
   margin-bottom: 5px;
 }
 
+h3.new:hover {
+  color: var(--soft-orange);
+}
+
 .new p {
   line-height: 25px;
+}
+
+@media (min-width: 1200px) and (orientation: landscape) {
+  div.new {
+    margin: 0;
+  }
 }

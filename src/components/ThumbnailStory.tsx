@@ -9,7 +9,7 @@ type TNSProps = {
 
 export default function ThumbnailStory({imgSrc, number, headline, blurb}: TNSProps) {
   return (
-    <div className="story">
+    <div id={`tns0${number}`} className="story">
       <img src={imgSrc} alt={headline} aria-hidden />
       <h2 className="number">0{number}</h2>
       <h3 className="headline">{headline}</h3>
