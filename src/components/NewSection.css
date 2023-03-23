@@ -29,6 +29,10 @@ h3.new {
   margin-bottom: 5px;
 }
 
+h3.new:hover {
+  color: var(--soft-orange);
+}
+
 .new p {
   line-height: 25px;
 }

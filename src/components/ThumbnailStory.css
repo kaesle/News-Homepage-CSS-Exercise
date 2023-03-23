@@ -38,6 +38,10 @@
   margin: 0;
 }
 
+h3.headline:hover {
+  color: var(--soft-orange);
+}
+
 #tns01 {
   grid-area: tns01;
 }
